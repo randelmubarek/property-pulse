@@ -1,7 +1,13 @@
+
+import Hero from '@/components/Hero';
+import InfoBoxes from '@/components/InfoBoxes';
 const HompePage = () => {
-    return ( <div className='text-2xl'>
-        Welcome to Property Pulse!
-    </div> );
+    return (
+         <> 
+    <Hero />
+    <InfoBoxes />
+    </>
+    );
 }
  
 export default HompePage;

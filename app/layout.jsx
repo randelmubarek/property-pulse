@@ -1,4 +1,8 @@
 import '@/assets/styles/globals.css';
+import Navbar from '@/components/navbar';
+import Footer from '@/components/Footer';
+
+
 export const metadata = {
     title: 'Property Pulse',
     keywords: 'Real Estate, Property Listings, Homes for Sale, Rent, Buy, Sell',
@@ -7,9 +11,11 @@ export const metadata = {
 const MainLayout = ({children}) => {
     return ( <html>
 <body>
+    <Navbar />
     <main>
         {children}
     </main>
+    <Footer />
 </body>
 
     </html> );
