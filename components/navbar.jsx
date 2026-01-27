@@ -9,7 +9,7 @@ import { FaGoogle } from 'react-icons/fa';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isProfileOpen, setIsProfileOpen] = useState(false);
-    const pathname = usePathname();
+    const pathname = usePathname(); // use for active link styling
     const [isLoggedIn, setIsLoggedIn] = useState(false); // Simulated auth state
     return (
 
@@ -63,7 +63,7 @@ const Navbar = () => {
             {/* <!-- Desktop Menu Hidden below md screens --> */}
             <div className="hidden md:ml-6 md:block">
               <div className="flex space-x-2">
-                <Link
+                <Link //here is where to add active link styling
                   href="/"
                   className={`${pathname === '/' ? 'bg-black' : ''} text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                   >Home</Link>

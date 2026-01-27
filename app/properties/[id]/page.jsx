@@ -1,5 +1,5 @@
 
-const AddPropertyPage = async({params , searchParams}) => {
+const PropertyPage = async({params , searchParams}) => {
   const {id} = await params;
   const {name} = await searchParams;
     return ( <div>
@@ -9,4 +9,4 @@ const AddPropertyPage = async({params , searchParams}) => {
     </div> );
 }
  
-export default AddPropertyPage;
+export default PropertyPage;
