@@ -4,8 +4,8 @@ const InfoBoxes = () => {
     return ( 
         
         <section>
-      <div class="container mx-auto ">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
+      <div className="container mx-auto ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
           <InfoBox heading='For Renters' buttonInfo={{text:'Browse Properties', link:'/properties', backgroundColor:'bg-black', textColor:'text-white'}} >
              Find your dream rental property. Bookmark properties and contact
               owners.
