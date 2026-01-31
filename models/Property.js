@@ -12,9 +12,9 @@ const ProprtySchema = new Schema ({
         state :  String  ,
         zipCode :  String
     },
-    Beds : {type: Number , required: true },
-    Baths : {type: Number , required: true },
-    sqft : {type: Number , required: true  },
+    beds : {type: Number , required: true },
+    baths : {type: Number , required: true },
+    square_feet : {type: Number , required: true  },
     amenities : [{ type: String }],
     rates : {
         nightly :  Number ,
