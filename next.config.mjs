@@ -9,6 +9,12 @@ const nextConfig = {
 				hostname: "lh3.googleusercontent.com",
 				pathname: "**",
 			},
+			//allow loading images from cloudinary
+			{
+				protocol: "https",
+				hostname: "res.cloudinary.com",
+				pathname: "**",
+			},
 		],
 	},
 };

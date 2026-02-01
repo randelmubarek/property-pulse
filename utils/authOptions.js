@@ -1,9 +1,10 @@
-//we are setting up authentication options for NextAuth.js using Google as the provider , its in seperated file for better organization and maintainability
+//we are setting up authentication options for NextAuth.js using Google as the provider ,
+// its in seperated file for better organization and maintainability
 import GoogleProvider from "next-auth/providers/google";
 import connectDB from "@/config/database";
 import User from "@/models/User";
 
-const authOptions = {
+export const authOptions = {
 	providers: [
 		GoogleProvider({
 			clientId: process.env.GOOGLE_CLIENT_ID,
@@ -50,4 +51,3 @@ const authOptions = {
 		},
 	},
 };
-export default authOptions;
